@@ -2,6 +2,7 @@ import pygame
 import threading
 
 pygame.init()
+pygame.mixer.init()
 
 # Глобальні змінні для управління музикою
 music_playing = threading.Event()  # Подія для контролю відтворення музики

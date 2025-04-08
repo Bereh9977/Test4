@@ -5,6 +5,8 @@ import itertools
 import threading
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 import music
+import pygame
+pygame.mixer.init()
 
 @pytest.fixture(autouse=True)
 def reset_globals():
